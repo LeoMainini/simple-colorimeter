@@ -21,7 +21,7 @@
         <div class="row justify-content-center">
             {% for color in colors %}
                 <div class="col-10 my-1" style="background-color: rgb({{color['r']}},{{color['g']}},{{color['b']}});" >
-                    <p style="color: rgb({{255-color['r']}},{{255-color['g']}},{{255-color['b']}});">Color: {{color}}</p>
+                    <p style="padding-top: 1%; color: rgb({{255-color['r']}},{{255-color['g']}},{{255-color['b']}});">Color: {{color}}</p>
                     <p style="color: rgb({{255-color['r']}},{{255-color['g']}},{{255-color['b']}});">Percentage: {{pct[colors.index(color)]}}</p>
                 </div>
             {%endfor%}
